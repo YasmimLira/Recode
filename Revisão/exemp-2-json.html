@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <script>
+        var dados = {
+            "employees": {
+                "employee": [
+                    {
+                        "id": "1",
+                        "firstName": "Tom",
+                        "lastName": "Cruise",
+                        "photo": "img/Tom.jpg"
+                    },
+                    {
+                        "id": "2",
+                        "firstName": "Maria",
+                        "lastName": "Sharapova",
+                        "photo": "img/maria.jpg"
+                    },
+                    {
+                        "id": "3",
+                        "firstName": "Robert",
+                        "lastName": "Downey Jr.",
+                        "photo": "img/robert.jpg"
+                    }
+                ]
+            }
+        };
+
+        document.write("tamanho do array: " + dados.employees.employee.length)
+        document.write("<br><br>");
+
+        document.write("Ao exibir os itens do array, podemos ver que são do tipo Object: <br><br>");
+        for (var i = 0; i < dados.employees.employee.length; i++){
+            document.write(dados.employees.employee[i]);
+            document.write("<br>");
+        }
+
+        document.write("<hr><br><br>Como JSON é um Object, seu conteúdo deve ser acessado como método: <br><br>");
+        for (var i = 0; i < dados.employees.employee.length; i++){
+            document.write(dados.employees.employee[i].firstName + " " + dados.employees.employee[i].lastName);
+            document.write("<br>");
+            document.write("<img src= '" + dados.employees.employee[i].photo + "'>");
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#conteudo h1{
+    color: darkblue;
+}
+
+#conteudo h1, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#conteudo p{
+    color: darkcyan;
+}
+
+#conteudo b{
+    color: magenta;
+}

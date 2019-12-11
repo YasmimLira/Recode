@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Exemplo 5</title>
+    <style> 
+        .destaque{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .linhaMaior{
+            height: 150px;
+            background-color: gray;
+        }
+        .colunaNormal{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container destaque">
+        <div class="row linhaMaior align-items-center"> <!-- Inicio da primeira linha start/end -->
+            <div class="col destaque colunaNormal"> <!-- Inicio da primeira coluna -->
+                <p>Parte 1</p>
+            </div> <!-- Fim da primeira coluna -->
+            <div class="col destaque colunaNormal"> <!-- Inicio da segunda coluna -->
+                <p>Parte 2</p>
+            </div> <!-- Fim da segunda coluna -->
+            <div class="col destaque colunaNormal"> <!-- Inicio da terceira coluna -->
+                <p>Parte 3</p>
+            </div> <!-- Fim da terceira coluna -->
+        </div> <!-- Fim da linha -->
+    </div>
+    <!-- Scripts JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

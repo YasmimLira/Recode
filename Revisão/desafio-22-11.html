@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Calculadora {
+    constructor(n) {
+        this.resultado = n;
+    }
+    somar(soma) {
+        return calculadora.resultado = calculadora.resultado + soma;
+    }
+    subtrair(subtrai) {
+        return calculadora.resultado = calculadora.resultado - subtrai;
+    }
+    multiplicar(multi) {
+        return calculadora.resultado = calculadora.resultado * multi;
+    }
+    dividir(divide) {
+        return calculadora.resultado = calculadora.resultado / divide;
+    }
+    mostrarResultado() {
+        return calculadora.resultado;
+    }
+}
+let calculadora = new Calculadora(3);
+calculadora.somar(5);
+calculadora.subtrair(2);
+calculadora.multiplicar(3);
+calculadora.dividir(2);
+console.log(calculadora.mostrarResultado());
+    </script>
+</body>
+</html>

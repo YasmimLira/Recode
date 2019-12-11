@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    class Caixa{
+        sald: number;
+        constructor(saldo: number) {
+            this.sald = saldo
+        }
+    
+        sacar(valor: number) {
+            this.sald -=valor
+        }
+        depositar(valor: number) {
+            this.sald +=valor
+        }
+        mostrarSaldo() {
+            return this.sald
+        }
+    }
+    let calc = new Caixa(1000)
+    
+    calc.sacar(250)
+    calc.depositar(500)
+    console.log( calc.mostrarSaldo() )
+</body>
+</html>
